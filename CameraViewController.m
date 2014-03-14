@@ -100,7 +100,7 @@ UIColor *disclosureColor;
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     PFUser *user = [self.friends objectAtIndex:indexPath.row];
     
-    if (cell.accessoryView = nil) {
+    if (cell.accessoryView == nil) {
         cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_CHECKMARK color:disclosureColor];
         [self.recipients addObject:user.objectId];
     }
